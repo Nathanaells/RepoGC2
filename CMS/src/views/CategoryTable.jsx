@@ -20,7 +20,6 @@ export default function CategoryTable() {
       });
       setData(data.data);
     } catch (error) {
-      navigate("/");
       showError(error.response.data.message);
     } finally {
       setLoading(false);

@@ -14,7 +14,7 @@ export default function EditProduct() {
 
   async function fetchProduct() {
     try {
-      setLoading(true); // mulai loading
+      setLoading(true); 
       const { data } = await axios.get(`${url}/products/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
