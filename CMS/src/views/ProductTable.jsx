@@ -22,7 +22,6 @@ export default function ProductTable() {
       });
       setData(data.data);
     } catch (error) {
-      navigate("/");
       showError(error.response?.data?.message || "Error fetching data");
     } finally {
       setLoading(false);

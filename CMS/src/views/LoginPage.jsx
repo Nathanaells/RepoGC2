@@ -18,7 +18,6 @@ export default function LoginPage() {
       navigate("/home");
       showSuccess();
     } catch (error) {
-      navigate("/");
       showError(error.response.data.message);
     }
   }

@@ -10,7 +10,7 @@ export default function EditProduct() {
   const navigate = useNavigate();
   const { id } = useParams();
   const [product, setProduct] = useState({});
-  const [loading, setLoading] = useState(false); // ⏳ Tambahan state loading
+  const [loading, setLoading] = useState(false);
 
   async function fetchProduct() {
     try {
